@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="ProductShop.Pages.OrderUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProductShop.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10">
+                <Image x:Name="ImageImg" Width="150" Height="150"></Image>
+            </StackPanel>
+            <StackPanel  Orientation="Vertical" Margin="10">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="10 0">Товар:</TextBlock>
+                        <TextBlock x:Name="TitleTb">Плойка женская PlayStation 5</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="10 0">Кол-во:</TextBlock>
+                        <TextBlock x:Name="AmountTb">69</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="10 0">Итоговая цена:</TextBlock>
+                        <TextBlock x:Name="PriceTb">78787</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                    <Button x:Name="DeleteButt" Cursor="Hand" Background="#FFE31C3D" Width="100"><Image Source="/Resources/trashcan.png" /></Button>
+                    <Button x:Name="IncreaseButt" Background="#FFE31C3D" Foreground="White" Width="50">+</Button>
+                    <Button x:Name="DecreaseButt" Background="#FFE31C3D" Foreground="White" Width="50">-</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>   
+    </Grid>
+</UserControl>
